@@ -1,0 +1,36 @@
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); /* Posisi awal dari kiri */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Posisi akhir */
+  }
+}
+
+/* Terapkan animasi pada setiap elemen li */
+li {
+  animation: slideIn 0.5s ease-in-out; /* Waktu animasi 0.5 detik */
+}
+
+/* Atur keterlambatan untuk setiap elemen li */
+li:nth-child(1) {
+  animation-delay: 0.5s; /* Waktu tunda 0.5 detik untuk elemen pertama */
+}
+
+li:nth-child(2) {
+  animation-delay: 1s; /* Waktu tunda 1 detik untuk elemen kedua */
+}
+
+li:nth-child(3) {
+  animation-delay: 1.5s; /* Waktu tunda 1.5 detik untuk elemen ketiga */
+}
+
+li:nth-child(4) {
+  animation-delay: 2s; /* Waktu tunda 2 detik untuk elemen keempat */
+}
+
+li:nth-child(5) {
+  animation-delay: 2.5s; /* Waktu tunda 2.5 detik untuk elemen kelima */
+}

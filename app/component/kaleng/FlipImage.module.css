@@ -1,0 +1,11 @@
+/* components/FlipImage.module.css */
+.flipImage {
+    perspective: 1000px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .flipImage img {
+    width: 100%;
+    height: auto;
+    transform-origin: center bottom;
+  }
