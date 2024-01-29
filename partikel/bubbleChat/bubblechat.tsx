@@ -1,5 +1,5 @@
 import React from "react";
-import "./bubbleChat.css";
+import "./bubblechat.css";
 
 const Bubble = () => {
 	return (
