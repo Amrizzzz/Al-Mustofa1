@@ -4,10 +4,10 @@ import "./globals.css";
 import { GlobalContextProvider } from "@/app/context/global";
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Rumah Sehat Al-Mustofa",
-  description: "Rumah Sehat Al-Mustofa melayani dengan sepenuh hati",
-};
+// export const metadata: Metadata = {
+//   title: "Rumah Sehat Al-Mustofa",
+//   description: "Rumah Sehat Al-Mustofa melayani dengan sepenuh hati",
+// };
 
 export default function RootLayout({
   children,
@@ -18,6 +18,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/company.png" />
+        <title>Rumah Sehat Al-Mustofa</title>
+        <meta
+          name="description"
+          content="Rumah Sehat Al-Mustofa melayani dengan sepenuh hati"
+        />
       </head>
       <body className={inter.className}>
         <GlobalContextProvider>{children}</GlobalContextProvider>
